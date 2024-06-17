@@ -1,0 +1,17 @@
+.students img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.students table tr{
+    vertical-align:middle;
+}
+
+.student_img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}

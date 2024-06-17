@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Student desbord -->
+
+    <div class="students mt-5">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <button class=" m-2 btn btn-primary" data-bs-toggle="modal" data-bs-target="#creat_student">Create Student</button>
+                    <div class="card shadow">
+                        <div class="card">
+                            <div class="card-header">
+                               <h3>All Students</h3>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-light">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Photo</th>
+                                            <th>Mobile</th>
+                                            <th>Email</th>
+                                            <th>Location</th>
+                                            <th>createdat time</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="student_data_list">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Student desbord end -->
+
+<!-- Student creat -->
+
+    <div id="creat_student" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Create Student</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mgs ">
+                        
+                    </div>
+                    <form id="creat_student_form">
+                        <div class="my-3">
+                            <input name="name" class="form-control" type="text" placeholder="Name">
+                        </div>                        
+                        <div class="my-3">
+                            <input name="photo" class="form-control" type="text" placeholder="Photo">
+                        </div>                        
+                        <div class="my-3">
+                            <input name="email" class="form-control" type="text" placeholder="Email">
+                        </div>                        
+                        <div class="my-3">
+                            <input name="mobile" class="form-control" type="text" placeholder="Mobile">
+                        </div>                        
+                        <div class="my-3">
+                            <input name="location" class="form-control" type="text" placeholder="Location">
+                        </div>                        
+                        <div class="my-3">
+                            <button class=" btn btn-primary w-100" type="submit">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- students creat form end -->
+
+    <!-- Students profile -->
+
+    <div id="show_student" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Student Profile</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body text-center studens_single">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- student profile end -->
+
+    <!-- scrip  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/model.js"></script>
+    <script src="./src/funtion.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>
